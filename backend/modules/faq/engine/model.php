@@ -638,7 +638,7 @@ class BackendFaqModel implements BackendSitemapInterface
 			{
 				// create last modification date
 				$lastMod = new DateTime();
-				$lastMod->setTimestamp($item['edited_on']);
+				$lastMod->setTimestamp($item['created_on']);
 
 				$questions[] = array(
 					'loc' => SITE_URL . $detailUrl . '/' . $item['url'],
